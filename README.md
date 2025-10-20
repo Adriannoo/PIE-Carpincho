@@ -51,9 +51,3 @@ O design do projeto foi desenvolvido no **Figma**, com foco em:
 - **Contato:** Informações de endereço, telefone e redes sociais.  
 
 ---
-
-## 💻 Como Executar o Projeto
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/carpincho.git
