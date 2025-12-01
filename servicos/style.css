@@ -1,35 +1,18 @@
-/* =======================================
-   PÁGINA SERVIÇOS - CARPINCHO
-======================================= */
 
-/* CONTAINER PRINCIPAL */
+* {
+  box-sizing: border-box;
+}
 
-.servicos {
-  min-height: 100vh;
-  width: 100%;
-  background-color: #000000;
-  color: #ffffff;
-  position: relative;
-  overflow-x: hidden;
+body {
+  margin: 0;
+  background: #000;
+  color: white;
   font-family: var(--escritas-menores-font-family, "Montserrat", sans-serif);
 }
 
-/* FUNDO COM IMAGENS E BLUR */
-
-.servicos-bg {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  display: flex;
-  filter: blur(8px);
-}
-
-.servicos-bg .bg-image {
-  flex: 1;
-  object-fit: cover;
-}
-
-/* HEADER */
+/* =======================================
+      HEADER (shared with landingPage)
+======================================= */
 
 .site-header {
   position: fixed;
@@ -51,8 +34,6 @@
   gap: 32px;
 }
 
-/* Marca / Logo */
-
 .brand {
   display: flex;
   align-items: center;
@@ -73,8 +54,6 @@
   font-size: 32px;
   letter-spacing: var(--title-hero-letter-spacing);
 }
-
-/* Navegação */
 
 .main-nav {
   margin-left: auto;
@@ -112,12 +91,31 @@
   object-fit: contain;
 }
 
-/* CONTEÚDO PRINCIPAL */
+/* =======================================
+      BACKGROUND GERAL DOS SERVIÇOS
+======================================= */
+
+.servicos-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: flex;
+  filter: blur(8px);
+}
+
+.bg-image {
+  flex: 1;
+  object-fit: cover;
+}
+
+/* =======================================
+      CONTEÚDO PRINCIPAL
+======================================= */
 
 .servicos-main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 130px 24px 120px; /* espaço por causa do header fixo */
+  padding: 130px 24px 120px;
 }
 
 /* TÍTULO */
@@ -137,91 +135,73 @@
 
 .hero-title {
   font-family: var(--NOSSOS-PRODUTOS-font-family);
-  font-weight: var(--NOSSOS-PRODUTOS-font-weight);
-  color: #eb221e;
   font-size: 64px;
+  color: #EB221E;
   letter-spacing: var(--NOSSOS-PRODUTOS-letter-spacing);
-  line-height: 1.1;
 }
 
-/* GRID DE SERVIÇOS */
-
-.servicos-grid-section {
-  margin-bottom: 80px;
-}
+/* GRID */
 
 .servicos-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
 
 .servico-card {
-  background-color: rgba(67, 0, 0, 0.8);
+  background: rgba(67, 0, 0, 0.8);
   border-radius: 16px;
   border: 1px solid rgba(242, 242, 242, 0.8);
   min-height: 190px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   backdrop-filter: blur(4px);
 }
 
 .servico-card h2 {
-  font-family: var(--title-hero-font-family);
-  font-weight: var(--title-hero-font-weight);
+  font-family: "Racing Sans One";
   font-size: 32px;
-  color: #ffffff;
 }
 
-/* FOOTER */
+/* =======================================
+      FOOTER
+======================================= */
 
 .site-footer {
-  background-color: #383838;
+  background: #383838;
   padding: 40px 24px 16px;
-  color: #ffffff;
 }
 
 .footer-inner {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   gap: 48px;
-  align-items: flex-start;
   flex-wrap: wrap;
 }
-
-/* Lado esquerdo */
 
 .footer-left {
   flex: 1 1 320px;
 }
 
-.footer-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
 .footer-logo {
   width: 80px;
   height: 80px;
-  object-fit: cover;
 }
 
 .footer-brand-name {
-  font-family: var(--title-hero-font-family);
-  font-weight: var(--title-hero-font-weight);
-  color: #eb221e;
+  font-family: "Racing Sans One";
   font-size: 32px;
+  color: #EB221E;
 }
 
 .footer-text {
   margin-top: 16px;
   max-width: 420px;
-  font-family: var(--footer-font-family);
-  font-size: var(--footer-font-size);
-  line-height: var(--footer-line-height);
+  font-size: 18px;
 }
 
 .footer-socials {
@@ -230,100 +210,67 @@
   gap: 12px;
 }
 
-.social-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-/* Lado direito */
-
 .footer-right {
   flex: 1 1 260px;
   display: flex;
   gap: 64px;
-  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
 .footer-column {
-  min-width: 120px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.footer-column-title {
-  font-family: var(--footer-font-family);
-  font-weight: var(--footer-font-weight);
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-.footer-link {
-  font-family: var(--medium-type-16-font-family);
-  font-size: var(--medium-type-16-font-size);
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 0.9;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
-
 .footer-copy {
   margin-top: 24px;
   text-align: center;
-  font-family: var(--footer-font-family);
-  font-size: 14px;
 }
 
-/* ===========================
-   RESPONSIVIDADE
-=========================== */
+/* =======================================
+      RESPONSIVIDADE
+======================================= */
 
-/* Até 1024px (notebooks menores) */
 @media (max-width: 1024px) {
-  .servicos-main {
-    padding-inline: 16px;
-  }
-
   .hero-title {
     font-size: 48px;
   }
-
   .servicos-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .main-nav {
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Até 768px (tablet / mobile) */
 @media (max-width: 768px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+  .header {
+    height: 80px;
+    padding: 0 20px;
   }
 
-  .main-nav {
-    margin-left: 0;
-    gap: 16px;
-    flex-wrap: wrap;
+  .header-logo-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-logo-text {
+    font-size: 28px;
+  }
+
+  .header-nav {
+    gap: 22px;
+  }
+
+  .header-link {
+    font-size: 18px;
+  }
+
+  .header-link-icon {
+    width: 20px;
+    height: 20px;
   }
 
   .servicos-main {
     padding-top: 140px;
-  }
-
-  .servicos-hero {
-    flex-direction: row;
-    align-items: center;
   }
 
   .hero-title {
@@ -336,25 +283,10 @@
 
   .footer-inner {
     flex-direction: column;
-    gap: 32px;
-  }
-
-  .footer-right {
-    justify-content: flex-start;
   }
 }
 
-/* Até 480px (celular pequeno) */
 @media (max-width: 480px) {
-  .brand-logo {
-    width: 60px;
-    height: 60px;
-  }
-
-  .brand-name {
-    font-size: 24px;
-  }
-
   .hero-title {
     font-size: 32px;
   }

@@ -1,6 +1,6 @@
 .landing-page {
   background-color: black;
-  overflow: hidden;
+  overflow: visible;
   width: 100%;
   min-width: 1080px;
   min-height: 1920px;
@@ -419,155 +419,86 @@
   line-height: var(--escritas-line-height);
 }
 
-.landing-page .header {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  gap: 66px;
-  padding: 0px 9px;
-  position: absolute;
+.site-header {
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   background-color: #000000cc;
   backdrop-filter: blur(24px) brightness(100%);
   -webkit-backdrop-filter: blur(24px) brightness(100%);
+  z-index: 100;
 }
 
-.landing-page .iconroda-2 {
-  position: relative;
-  width: 180px;
-  height: 180px;
-  aspect-ratio: 1;
-  object-fit: cover;
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
-.landing-page .text-wrapper-12 {
-  position: relative;
-  width: fit-content;
+/* Marca / Logo */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.brand-name {
   font-family: var(--title-hero-font-family);
   font-weight: var(--title-hero-font-weight);
   color: #eb221e;
-  font-size: var(--title-hero-font-size);
+  font-size: 32px;
   letter-spacing: var(--title-hero-letter-spacing);
-  line-height: var(--title-hero-line-height);
-  white-space: nowrap;
-  font-style: var(--title-hero-font-style);
 }
 
-.landing-page .grupo-header {
-  position: relative;
-  width: 807px;
-  height: 100px;
-}
-
-.logo-carpincho {
+.main-nav {
+  margin-left: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 
-.landing-page .linhas {
-  position: absolute;
-  top: 0;
-  left: 246px;
-  width: 331px;
-  height: 100px;
+.nav-link {
   display: flex;
-  gap: 329.5px;
-}
-
-.landing-page .line {
-  width: 1px;
-  height: 100px;
-  margin-left: -1px;
-  object-fit: cover;
-}
-
-.landing-page .line-2 {
-  margin-top: 0;
-  width: 1.67px;
-  height: 100.02px;
-}
-
-.landing-page .contato-3 {
-  position: absolute;
-  top: 26px;
-  left: 595px;
-  width: 214px;
-  height: 48px;
-  display: flex;
-  gap: 7px;
-  cursor: pointer;
-}
-
-.landing-page .img-2 {
-  margin-top: 6px;
-  width: 35px;
-  height: 35px;
-  aspect-ratio: 1;
-}
-
-.landing-page .text-wrapper-13 {
-  width: 170px;
-  height: 48px;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
   font-family: var(--title-page-font-family);
   font-weight: var(--title-page-font-weight);
+  font-size: 20px;
   color: #eb221e;
-  font-size: var(--title-page-font-size);
-  letter-spacing: var(--title-page-letter-spacing);
-  line-height: var(--title-page-line-height);
   white-space: nowrap;
-  font-style: var(--title-page-font-style);
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.landing-page .quem-somos-5 {
-  position: absolute;
-  top: 26px;
-  left: 263px;
-  width: 294px;
-  height: 48px;
-  display: flex;
-  gap: 7px;
-  cursor: pointer;
+.nav-link--active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-.landing-page .text-wrapper-14 {
-  width: 250px;
-  height: 48px;
-  font-family: var(--title-page-font-family);
-  font-weight: var(--title-page-font-weight);
-  color: #eb221e;
-  font-size: var(--title-page-font-size);
-  letter-spacing: var(--title-page-letter-spacing);
-  line-height: var(--title-page-line-height);
-  white-space: nowrap;
-  font-style: var(--title-page-font-style);
+.nav-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
-.landing-page .servicos {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  width: 225px;
-  height: 48px;
-  display: flex;
-  gap: 7px;
-  cursor: pointer;
+.nav-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
 }
 
-.landing-page .text-wrapper-15 {
-  width: 180px;
-  height: 48px;
-  font-family: var(--title-page-font-family);
-  font-weight: var(--title-page-font-weight);
-  color: #eb221e;
-  font-size: var(--title-page-font-size);
-  letter-spacing: var(--title-page-letter-spacing);
-  line-height: var(--title-page-line-height);
-  white-space: nowrap;
-  font-style: var(--title-page-font-style);
-}
+/* Removed legacy header-specific rules (replaced by .site-header, .header-inner, .brand, .main-nav, etc.) */
 
 .landing-page .boto-whats {
   display: inline-flex;
