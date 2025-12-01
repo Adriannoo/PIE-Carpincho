@@ -2,8 +2,8 @@
   background-color: black;
   overflow: hidden;
   width: 100%;
-  min-width: 1440px;
-  min-height: 2510px;
+  min-width: 1080px;
+  min-height: 1920px;
   position: relative;
 }
 
@@ -461,6 +461,12 @@
   height: 100px;
 }
 
+.logo-carpincho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .landing-page .linhas {
   position: absolute;
   top: 0;
@@ -551,7 +557,7 @@
 }
 
 .landing-page .text-wrapper-15 {
-  width: 181px;
+  width: 180px;
   height: 48px;
   font-family: var(--title-page-font-family);
   font-weight: var(--title-page-font-weight);

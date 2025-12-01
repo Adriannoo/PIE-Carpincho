@@ -1,622 +1,221 @@
-.nossos-servios {
-  background-color: #000000;
-  width: 100%;
-  min-width: 1440px;
-  min-height: 1430px;
-  position: relative;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nossos-servios .footer {
-  position: absolute;
-  top: 1080px;
-  left: 0;
-  width: 100%;
-  height: 350px;
-  background-color: #383838;
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
-.nossos-servios .text-wrapper {
-  position: absolute;
-  top: 309px;
-  left: 474px;
-  width: 491px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--footer-font-family);
-  font-weight: var(--footer-font-weight);
-  color: #ffffff;
-  font-size: var(--footer-font-size);
-  letter-spacing: var(--footer-letter-spacing);
-  line-height: var(--footer-line-height);
-  font-style: var(--footer-font-style);
-}
+/* HEADER -------------------------------------------------------- */
 
-.nossos-servios .iconroda {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 140px;
-  height: 140px;
-  aspect-ratio: 1;
-  object-fit: cover;
-}
-
-.nossos-servios .div {
-  position: absolute;
-  top: 45px;
-  left: 140px;
-  font-family: var(--title-hero-font-family);
-  font-weight: var(--title-hero-font-weight);
-  color: #eb221e;
-  font-size: var(--title-hero-font-size);
-  letter-spacing: var(--title-hero-letter-spacing);
-  line-height: var(--title-hero-line-height);
-  white-space: nowrap;
-  font-style: var(--title-hero-font-style);
-}
-
-.nossos-servios .icone-facebook {
-  left: 70px;
-  position: absolute;
-  top: 258px;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  aspect-ratio: 1;
-  background-size: 100% 100%;
-}
-
-.nossos-servios .icone-insta {
-  left: 124px;
-  position: absolute;
-  top: 258px;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  aspect-ratio: 1;
-  background-size: 100% 100%;
-}
-
-.nossos-servios .p {
-  position: absolute;
-  top: 139px;
-  left: calc(50% - 664px);
-  width: 600px;
-  font-family: var(--footer-font-family);
-  font-weight: var(--footer-font-weight);
-  color: #ffffff;
-  font-size: var(--footer-font-size);
-  text-align: center;
-  letter-spacing: var(--footer-letter-spacing);
-  line-height: var(--footer-line-height);
-  font-style: var(--footer-font-style);
-}
-
-.nossos-servios .socials {
-  position: absolute;
-  top: 45px;
-  left: 1213px;
-  width: 156px;
-  height: 244px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.nossos-servios .text-wrapper-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 152px;
-  height: 32px;
-  font-family: var(--footer-font-family);
-  font-weight: var(--footer-font-weight);
-  color: #ffffff;
-  font-size: var(--footer-font-size);
-  letter-spacing: var(--footer-letter-spacing);
-  line-height: var(--footer-line-height);
-  white-space: nowrap;
-  font-style: var(--footer-font-style);
-}
-
-.nossos-servios .text-wrapper-3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 152px;
-  height: 188px;
-  font-family: var(--medium-type-16-font-family);
-  font-weight: var(--medium-type-16-font-weight);
-  color: #ffffff;
-  font-size: var(--medium-type-16-font-size);
-  letter-spacing: var(--medium-type-16-letter-spacing);
-  line-height: var(--medium-type-16-line-height);
-  font-style: var(--medium-type-16-font-style);
-}
-
-.nossos-servios .sobre {
-  position: absolute;
-  top: 45px;
-  left: 965px;
-  width: 156px;
-  height: 244px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.nossos-servios .imagens {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1440px;
-  height: 1081px;
-  display: flex;
-  filter: blur(8px);
-}
-
-.nossos-servios .image {
-  width: 720px;
-  height: 1081px;
-  aspect-ratio: 0.67;
-  object-fit: cover;
-}
-
-.nossos-servios .profissionais {
-  position: absolute;
-  top: 578px;
-  left: 848px;
-  width: 542px;
-  height: 120px;
-}
-
-.nossos-servios .rectangle {
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 550px;
-  height: 130px;
-  background-color: #0c0c0cf2;
-  border-radius: 20px;
-  border: 5px solid;
-  border-color: #f2f2f2;
-}
-
-.nossos-servios .text-wrapper-4 {
-  position: absolute;
-  top: 20px;
-  left: 80px;
-  font-family: "Racing Sans One-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 64px;
-  letter-spacing: -1.92px;
-  line-height: 76.8px;
-  white-space: nowrap;
-}
-
-.nossos-servios .duidas {
-  position: absolute;
-  top: 738px;
-  left: 848px;
-  width: 542px;
-  height: 120px;
-}
-
-.nossos-servios .text-wrapper-5 {
-  position: absolute;
-  top: 20px;
-  left: 158px;
-  font-family: "Racing Sans One-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 64px;
-  letter-spacing: -1.92px;
-  line-height: 76.8px;
-  white-space: nowrap;
-}
-
-.nossos-servios .agendamento {
-  position: absolute;
-  top: 418px;
-  left: 848px;
-  width: 542px;
-  height: 120px;
-}
-
-.nossos-servios .text-wrapper-6 {
-  position: absolute;
-  top: 21px;
-  left: 75px;
-  font-family: "Racing Sans One-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 64px;
-  letter-spacing: -1.92px;
-  line-height: 76.8px;
-  white-space: nowrap;
-}
-
-.nossos-servios .caixa-produtos {
-  position: absolute;
-  top: 345px;
-  left: 20px;
-  width: 784px;
-  height: 615px;
-  background-color: #430000;
-  opacity: 55%;
-  backdrop-filter: blur(24px) brightness(100%);
-  -webkit-backdrop-filter: blur(24px) brightness(100%);
-}
-
-.nossos-servios .img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 780px;
-  height: 615px;
-}
-
-.nossos-servios .text-wrapper-7 {
-  position: absolute;
-  top: 50px;
-  left: 40px;
-  width: 220px;
-  font-family: var(--title-hero-font-family);
-  font-weight: var(--title-hero-font-weight);
-  color: #ffffff;
-  font-size: var(--title-hero-font-size);
-  letter-spacing: var(--title-hero-letter-spacing);
-  line-height: var(--title-hero-line-height);
-  font-style: var(--title-hero-font-style);
-}
-
-.nossos-servios .descri-o-do-servi-o {
-  position: absolute;
-  top: 130px;
-  left: 40px;
-  font-family: "Red Rose-Bold", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 64px;
-  letter-spacing: 0;
-  line-height: 76.8px;
-}
-
-.nossos-servios .span {
-  font-weight: var(--text-font-weight);
-  font-family: var(--text-font-family);
-  font-style: var(--text-font-style);
-  letter-spacing: var(--text-letter-spacing);
-  line-height: var(--text-line-height);
-  font-size: var(--text-font-size);
-}
-
-.nossos-servios .text-wrapper-8 {
-  font-family: var(--escritas-font-family);
-  font-weight: var(--escritas-font-weight);
-  font-style: var(--escritas-font-style);
-  font-size: var(--escritas-font-size);
-  line-height: var(--escritas-line-height);
-  letter-spacing: var(--escritas-letter-spacing);
-}
-
-.nossos-servios .servio {
-  position: absolute;
-  top: calc(50% - 525px);
-  left: calc(50% - 675px);
-  width: 428px;
-  height: 115px;
-}
-
-.nossos-servios .text-wrapper-9 {
-  position: absolute;
-  top: calc(50% - 58px);
-  left: calc(50% - 109px);
-  font-family: var(--NOSSOS-PRODUTOS-font-family);
-  font-weight: var(--NOSSOS-PRODUTOS-font-weight);
-  color: #eb221e;
-  font-size: var(--NOSSOS-PRODUTOS-font-size);
-  letter-spacing: var(--NOSSOS-PRODUTOS-letter-spacing);
-  line-height: var(--NOSSOS-PRODUTOS-line-height);
-  white-space: nowrap;
-  font-style: var(--NOSSOS-PRODUTOS-font-style);
-}
-
-.nossos-servios .tool {
-  position: absolute;
-  top: 8px;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  aspect-ratio: 1;
-}
-
-.nossos-servios .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  display: flex;
-  background-color: #000000cc;
-  backdrop-filter: blur(24px) brightness(100%);
-  -webkit-backdrop-filter: blur(24px) brightness(100%);
-}
-
-.nossos-servios .iconroda-2 {
-  width: 180px;
-  height: 150px;
-  margin-left: 9px;
-  aspect-ratio: 1;
-  object-fit: cover;
-}
-
-.nossos-servios .text-wrapper-10 {
-  margin-top: 46px;
-  width: 250px;
-  height: 58px;
-  margin-left: 11px;
-  font-family: var(--title-hero-font-family);
-  font-weight: var(--title-hero-font-weight);
-  color: #eb221e;
-  font-size: var(--title-hero-font-size);
-  letter-spacing: var(--title-hero-letter-spacing);
-  line-height: var(--title-hero-line-height);
-  white-space: nowrap;
-  font-style: var(--title-hero-font-style);
-}
-
-.nossos-servios .grupo-header {
-  margin-top: 25px;
-  width: 749px;
-  height: 100px;
-  position: relative;
-  margin-left: 178px;
-}
-
-.nossos-servios .linhas {
-  position: absolute;
-  top: 0;
-  left: 183px;
-  width: 331px;
-  height: 100px;
-  display: flex;
-  gap: 329.5px;
-}
-
-.nossos-servios .line {
-  width: 1px;
-  height: 100px;
-  margin-left: -1px;
-  object-fit: cover;
-}
-
-.nossos-servios .line-2 {
-  margin-top: 0;
-  width: 1.67px;
-  height: 100.02px;
-}
-
-.nossos-servios .contato {
-  position: absolute;
-  top: 24px;
-  left: 537px;
-  width: 214px;
-  height: 48px;
-  display: flex;
-  gap: 7px;
-}
-
-.nossos-servios .img-2 {
-  margin-top: 6px;
-  width: 35px;
-  height: 35px;
-  aspect-ratio: 1;
-}
-
-.nossos-servios .text-wrapper-11 {
-  width: 170px;
-  height: 48px;
-  font-family: var(--title-page-font-family);
-  font-weight: var(--title-page-font-weight);
-  color: #eb221e;
-  font-size: var(--title-page-font-size);
-  letter-spacing: var(--title-page-letter-spacing);
-  line-height: var(--title-page-line-height);
-  white-space: nowrap;
-  font-style: var(--title-page-font-style);
-}
-
-.nossos-servios .quem-somos {
-  position: absolute;
-  top: 24px;
-  left: 198px;
-  width: 294px;
-  height: 48px;
-  display: flex;
-  gap: 7px;
-}
-
-.nossos-servios .text-wrapper-12 {
-  width: 250px;
-  height: 48px;
-  font-family: var(--title-page-font-family);
-  font-weight: var(--title-page-font-weight);
-  color: #eb221e;
-  font-size: var(--title-page-font-size);
-  letter-spacing: var(--title-page-letter-spacing);
-  line-height: var(--title-page-line-height);
-  white-space: nowrap;
-  font-style: var(--title-page-font-style);
-}
-
-.nossos-servios .PAGINA-INICIAL {
-  position: absolute;
-  top: 24px;
-  left: 0;
-  width: 162px;
-  height: 48px;
-  display: flex;
-  gap: 7px;
-}
-
-.nossos-servios .PAGINA-INICIAL-2 {
-  width: 118px;
-  height: 48px;
-  font-family: var(--title-page-font-family);
-  font-weight: var(--title-page-font-weight);
-  color: #eb221e;
-  font-size: var(--title-page-font-size);
-  letter-spacing: var(--title-page-letter-spacing);
-  line-height: var(--title-page-line-height);
-  white-space: nowrap;
-  font-style: var(--title-page-font-style);
-}
-
-/* Copied header styles from landingPage (scoped to generic classes) */
 .header {
-  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
   width: 100%;
+  background: #000000d9;
+  backdrop-filter: blur(18px);
+  display: flex;
   align-items: center;
+  padding: 0 40px;
+  z-index: 999;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.logo-text {
+  font-size: 34px;
+  font-family: "Racing Sans One";
+  color: #eb221e;
+}
+
+.menu {
+  margin-left: auto;
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+  color: #eb221e;
+  font-family: "Racing Sans One";
+  font-size: 20px;
+}
+
+/* HERO -------------------------------------------------------- */
+
+.hero {
+  margin-top: 130px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-icon {
+  width: 75px;
+  height: 75px;
+}
+
+.hero h1 {
+  font-family: "Racing Sans One";
+  font-size: 70px;
+  color: #eb221e;
+}
+
+/* CONTEÚDO -------------------------------------------------------- */
+
+.content {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 40px;
+}
+
+/* Caixa vermelha */
+
+.left-box {
+  background: #430000d0;
+  padding: 40px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.small-title {
+  font-family: "Racing Sans One";
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.main-title {
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.descricao {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Botões */
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.action-btn {
+  height: 95px;
+  border-radius: 14px;
+  border: 4px solid #fff;
+  background: #0c0c0ccc;
+  display: flex;
   justify-content: center;
-  gap: 66px;
-  padding: 0px 9px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #000000cc;
-  backdrop-filter: blur(24px) brightness(100%);
-  -webkit-backdrop-filter: blur(24px) brightness(100%);
+  align-items: center;
+  font-family: "Racing Sans One";
+  font-size: 34px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s;
 }
 
-.iconroda-2 {
-  position: relative;
-  width: 180px;
-  height: 180px;
-  aspect-ratio: 1;
-  object-fit: cover;
+.action-btn:hover {
+  scale: 1.03;
 }
 
-.text-wrapper-12 {
-  position: relative;
-  width: fit-content;
-  font-family: var(--title-hero-font-family);
-  font-weight: var(--title-hero-font-weight);
-  color: #eb221e;
-  font-size: var(--title-hero-font-size);
-  letter-spacing: var(--title-hero-letter-spacing);
-  line-height: var(--title-hero-line-height);
-  white-space: nowrap;
-  font-style: var(--title-hero-font-style);
+/* FOOTER -------------------------------------------------------- */
+
+.footer {
+  margin-top: 100px;
+  padding: 40px;
+  background: #383838;
+  display: grid;
+  grid-template-columns: 260px 1fr 200px 200px;
+  gap: 40px;
 }
 
-.grupo-header {
-  position: relative;
-  width: 807px;
-  height: 100px;
-}
-
-.linhas {
-  position: absolute;
-  top: 0;
-  left: 246px;
-  width: 331px;
-  height: 100px;
+.footer-logo {
   display: flex;
-  gap: 329.5px;
+  align-items: center;
+  gap: 12px;
 }
 
-.line {
-  width: 1px;
-  height: 100px;
-  margin-left: -1px;
-  object-fit: cover;
+.footer-logo img {
+  width: 90px;
 }
 
-.line-2 {
-  margin-top: 0;
-  width: 1.67px;
-  height: 100.02px;
-}
-
-.contato-3 {
-  position: absolute;
-  top: 26px;
-  left: 595px;
-  width: 214px;
-  height: 48px;
-  display: flex;
-  gap: 7px;
-  cursor: pointer;
-}
-
-.img-2 {
-  margin-top: 6px;
-  width: 35px;
-  height: 35px;
-  aspect-ratio: 1;
-}
-
-.text-wrapper-13 {
-  width: 170px;
-  height: 48px;
-  font-family: var(--title-page-font-family);
-  font-weight: var(--title-page-font-weight);
+.footer-logo h2 {
+  font-family: "Racing Sans One";
+  font-size: 36px;
   color: #eb221e;
-  font-size: var(--title-page-font-size);
-  letter-spacing: var(--title-page-letter-spacing);
-  line-height: var(--title-page-line-height);
-  white-space: nowrap;
-  font-style: var(--title-page-font-style);
 }
 
-.quem-somos-5 {
-  position: absolute;
-  top: 26px;
-  left: 263px;
-  width: 294px;
-  height: 48px;
-  display: flex;
-  gap: 7px;
-  cursor: pointer;
+.footer-text {
+  font-size: 16px;
+  line-height: 1.4;
 }
 
-.text-wrapper-14 {
-  width: 250px;
-  height: 48px;
-  font-family: var(--title-page-font-family);
-  font-weight: var(--title-page-font-weight);
-  color: #eb221e;
-  font-size: var(--title-page-font-size);
-  letter-spacing: var(--title-page-letter-spacing);
-  line-height: var(--title-page-line-height);
-  white-space: nowrap;
-  font-style: var(--title-page-font-style);
+.footer-col h3 {
+  margin-bottom: 10px;
 }
 
-.servicos {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  width: 225px;
-  height: 48px;
-  display: flex;
-  gap: 7px;
-  cursor: pointer;
+.footer-col ul {
+  list-style: none;
 }
 
-.text-wrapper-15 {
-  width: 181px;
-  height: 48px;
-  font-family: var(--title-page-font-family);
-  font-weight: var(--title-page-font-weight);
-  color: #eb221e;
-  font-size: var(--title-page-font-size);
-  letter-spacing: var(--title-page-letter-spacing);
-  line-height: var(--title-page-line-height);
-  white-space: nowrap;
-  font-style: var(--title-page-font-style);
+.footer-col li {
+  margin: 6px 0;
+}
+
+.copy {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* RESPONSIVIDADE -------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 560px) {
+  .content,
+  .hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
 }
