@@ -10,6 +10,26 @@ body {
   font-family: var(--escritas-menores-font-family, "Montserrat", sans-serif);
 }
 
+/* Ensure links inside the services grid keep white color (no default blue on :visited) */
+.servicos-grid a,
+.servicos-grid a:link,
+.servicos-grid a:visited,
+.servicos-grid a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Make sure any text inside the anchor (e.g. h2) stays white */
+.servicos-grid a * {
+  color: inherit;
+}
+
+/* Accessible focus style for keyboard users */
+.servicos-grid a:focus-visible {
+  outline: 2px solid #eb221e;
+  outline-offset: 4px;
+}
+
 /* =======================================
       HEADER (shared with landingPage)
 ======================================= */
@@ -73,11 +93,6 @@ body {
   color: #eb221e;
   white-space: nowrap;
   transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.nav-link--active {
-  text-decoration: underline;
-  text-underline-offset: 4px;
 }
 
 .nav-link:hover {
@@ -166,66 +181,181 @@ body {
   font-size: 32px;
 }
 
-/* =======================================
-      FOOTER
-======================================= */
-
-.site-footer {
-  background: #383838;
-  padding: 40px 24px 16px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: auto;
+/* ===== FOOTER STYLES START ===== */
+.servicos .frame {
   display: flex;
-  gap: 48px;
-  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  padding: 0px 75px 13px 0px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #383838;
 }
 
-.footer-left {
-  flex: 1 1 320px;
-}
-
-.footer-logo {
-  width: 80px;
-  height: 80px;
-}
-
-.footer-brand-name {
-  font-family: "Racing Sans One";
-  font-size: 32px;
-  color: #EB221E;
-}
-
-.footer-text {
-  margin-top: 16px;
-  max-width: 420px;
-  font-size: 18px;
-}
-
-.footer-socials {
-  margin-top: 20px;
-  display: flex;
-  gap: 12px;
-}
-
-.footer-right {
-  flex: 1 1 260px;
-  display: flex;
-  gap: 64px;
-  flex-wrap: wrap;
-}
-
-.footer-column {
+.servicos .footer-div {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: center;
+  gap: 11px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
 }
 
-.footer-copy {
-  margin-top: 24px;
+.servicos .frame-2 {
+  display: flex;
+  flex-direction: column;
+  width: 656px;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.servicos .frame-3 {
+  display: flex;
+  width: 390px;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.servicos .iconroda {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.servicos .text-wrapper {
+  position: relative;
+  width: fit-content;
+  text-shadow: 0px 16px 32px -8px #0c0c0d66;
+  font-family: var(--title-hero-font-family);
+  font-weight: var(--title-hero-font-weight);
+  color: #eb221e;
+  font-size: var(--title-hero-font-size);
+  letter-spacing: var(--title-hero-letter-spacing);
+  line-height: var(--title-hero-line-height);
+  white-space: nowrap;
+  font-style: var(--title-hero-font-style);
+}
+
+.servicos .frame-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 0px 28px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  margin-top: -1px;
+}
+
+.servicos .p {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  color: #ffffff;
+  font-size: var(--footer-font-size);
   text-align: center;
+  letter-spacing: var(--footer-letter-spacing);
+  line-height: var(--footer-line-height);
+  font-style: var(--footer-font-style);
+}
+
+.servicos .img {
+  position: relative;
+  align-self: stretch;
+  width: 10%;
+  flex: 0 0 auto;
+  margin-bottom: -31px;
+  margin-left: -18px;
+}
+
+.servicos .footer-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  width: 100%;
+}
+
+.servicos .text-wrapper-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 491px;
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  color: #ffffff;
+  font-size: var(--footer-font-size);
+  letter-spacing: var(--footer-letter-spacing);
+  line-height: var(--footer-line-height);
+  font-style: var(--footer-font-style);
+}
+
+.servicos .frame-5 {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.servicos .sobre {
+  position: relative;
+  width: 156px;
+  height: 244px;
+}
+
+.servicos .text-wrapper-3 {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 152px;
+  height: 188px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--medium-type-16-font-family);
+  font-weight: var(--medium-type-16-font-weight);
+  color: #ffffff;
+  font-size: var(--medium-type-16-font-size);
+  letter-spacing: var(--medium-type-16-letter-spacing);
+  line-height: var(--medium-type-16-line-height);
+  font-style: var(--medium-type-16-font-style);
+}
+
+.servicos .text-wrapper-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 152px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--footer-font-family);
+  font-weight: var(--footer-font-weight);
+  color: #ffffff;
+  font-size: var(--footer-font-size);
+  letter-spacing: var(--footer-letter-spacing);
+  line-height: var(--footer-line-height);
+  white-space: nowrap;
+  font-style: var(--footer-font-style);
+}
+
+.servicos .socials {
+  position: relative;
+  width: 156px;
+  height: 244px;
+  margin-right: -4px;
 }
 
 /* =======================================

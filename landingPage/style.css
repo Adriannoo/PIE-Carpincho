@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.landing-page .frame {
+.landing-page /* ===== FOOTER STYLES START ===== */ .frame {
   display: flex;
   width: 100%;
   align-items: center;
@@ -18,7 +18,7 @@
   background-color: #383838;
 }
 
-.landing-page .div {
+.landing-page .footer-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,6 +182,8 @@
   height: 244px;
   margin-right: -4px;
 }
+
+/* ===== FOOTER STYLES END ===== */
 
 .landing-page .contato {
   display: inline-flex;
@@ -480,11 +482,6 @@
   color: #eb221e;
   white-space: nowrap;
   transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.nav-link--active {
-  text-decoration: underline;
-  text-underline-offset: 4px;
 }
 
 .nav-link:hover {

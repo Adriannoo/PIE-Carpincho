@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Seus arquivos corretos -->
+    
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
@@ -14,19 +14,34 @@
 
 <body>
 
+    <!-- FUNDO / IMAGENS -->
+      <div class="servicos-bg">
+        <img class="bg-image" src="./img/imagens.png" alt="fundo" />
+      </div>
+
     <!-- HEADER -->
     <header class="site-header">
-        <div class="header-inner">
-          <a href="index.html" class="brand">
-            <img class="brand-logo" src="img/iconroda-1.png" alt="Carpincho" />
-            <span class="brand-name">CARPINCHO</span>
-          </a>
+      <div class="header-inner">
+        <a href="../landingPage/index.html" class="brand">
+          <img class="brand-logo" src="img/iconroda-1.png" alt="Carpincho" />
+          <span class="brand-name">CARPINCHO</span>
+        </a>
 
-        <nav class="menu">
-            <!--<a href="../landingPage/index.html"><img src="img/home.svg"> INÍCIO</a>-->
-            <a href="../index.html#quem-somos"><img src="img/user.svg"> QUEM SOMOS</a>
-            <a href="../index.html#contato"><img src="img/phone.svg"> CONTATO</a>
+        <nav class="main-nav">
+          <a class="nav-link nav-link--active" href="../servicos/index.html">
+            <img class="nav-icon" src="../landingPage/img/tool.svg" alt="" />
+            <span>SERVIÇOS</span>
+          </a>
+          <a class="nav-link" href="../landingPage/index.html#quem-somos">
+            <img class="nav-icon" src="img/user.svg" alt="" />
+            <span>QUEM SOMOS</span>
+          </a>
+          <a class="nav-link" href="../landingPage/index.html#contato">
+            <img class="nav-icon" src="img/phone.svg" alt="" />
+            <span>CONTATO</span>
+          </a>
         </nav>
+      </div>
     </header>
 
     <!-- HERO -->
@@ -45,9 +60,7 @@
             <h3 class="titulo-grande">Descrição do Serviço</h3>
 
             <p class="descricao">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Ut a tellus eu dui maximus sodales vel vel nulla.
-                Phasellus erat est, lobortis non nisl et, pretium molestie enim.
+                DESCRICAO NAO CADASTRADA
             </p>
         </div>
 
@@ -60,41 +73,44 @@
 
     </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-
-        <div class="footer-logo">
-            <img src="img/iconroda-1.png">
-            <h2>CARPINCHO</h2>
+    <!-- FOOTER (copiado do landingPage) -->
+    <div class="frame">
+      <footer class="footer-div"> 
+        <div class="frame-2">
+          <div class="frame-3">
+            <img class="iconroda" src="img/iconroda-1.png" />
+            <div class="text-wrapper">CARPINCHO</div>
+          </div>
+          <div class="frame-4">
+            <p class="p">
+              Acreditamos em atendimento próximo e honesto. Seja para uma revisão ou um projeto maior, agende sua visita — nossa oficina está pronta para devolver ao seu carro a melhor performance e tranquilidade para você.
+            </p>
+            <div class="footer-logos">
+              <img class="img" src="img/facebook.svg" />
+              <img class="img" src="img/insta.svg" />
+            </div>
+          </div>
         </div>
-
-        <p class="footer-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Ut a tellus eu dui maximus sodales vel vel nulla.
+        <p class="text-wrapper-2">
+          ©2025 Carpincho. Todos os Direitos Reservados
         </p>
-
-        <div class="footer-col">
-            <h3>Sobre</h3>
-            <ul>
-                <li>A definir</li>
-                <li>A definir</li>
-                <li>A definir</li>
-                <li>A definir</li>
-            </ul>
+      </footer>
+      <div class="frame-5">
+        <div class="sobre">
+          <div class="text-wrapper-3">
+            LOCALIZAÇÂO<br/>
+          </div>
+          <div class="text-wrapper-4">Sobre</div>
         </div>
-
-        <div class="footer-col">
-            <h3>Contato</h3>
-            <ul>
-                <li>A definir</li>
-                <li>A definir</li>
-                <li>A definir</li>
-                <li>A definir</li>
-            </ul>
+        <div class="socials">
+          <div class="text-wrapper-3">
+            A DEFINIR<br/>
+          </div>
+          <div class="text-wrapper-4">Contato</div>
         </div>
-
-        <p class="copy">©2025 Carpincho. Todos os Direitos Reservados</p>
-    </footer>
+      </div>
+    </div>
 
 </body>
+</html>
 </html>
